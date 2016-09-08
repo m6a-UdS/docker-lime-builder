@@ -1,6 +1,6 @@
-FROM  ubuntu
+FROM  ubuntu:14.04
 VOLUME ["/lib/modules"]
-ENTRYPOINT ["entrypoint.sh"]
+# ENTRYPOINT ["entrypoint.sh"]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
