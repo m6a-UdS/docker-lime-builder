@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     man-db \
     autoconf \
     pkg-config \
-    ca-certificates
+    ca-certificates 
+RUN apt-get install realpath
     
 RUN git clone https://github.com/504ensicsLabs/LiME.git /lime
 COPY make-lime.sh /lime/make-lime.sh
