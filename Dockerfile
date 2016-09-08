@@ -16,6 +16,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     pkg-config \
     ca-certificates
     
-RUN mkdir /lime
 RUN git clone https://github.com/504ensicsLabs/LiME.git /lime
 COPY make-lime.sh /lime/make-lime.sh
