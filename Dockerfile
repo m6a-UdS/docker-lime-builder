@@ -1,6 +1,6 @@
 FROM  ubuntu:14.04
 VOLUME ["/lib/modules"]
-ENTRYPOINT ["lime/entrypoint.sh"]
+ENTRYPOINT ["lime/make-lime.sh"]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
@@ -18,4 +18,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     
 RUN mkdir /lime
 RUN git clone https://github.com/504ensicsLabs/LiME.git /lime
-COPY entrypoint.sh /lime/entrypoint.sh
+COPY entrypoint.sh /lime/make-lime.sh
