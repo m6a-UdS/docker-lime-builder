@@ -1,5 +1,5 @@
 FROM  ubuntu:14.04
-CMD ["lime/make-lime.sh"]
+CMD ["/lime/make-lime.sh"]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
