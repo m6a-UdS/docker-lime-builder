@@ -1,4 +1,5 @@
 FROM  ubuntu
+VOLUME        ["/lib/modules", "/lib/modules"]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
