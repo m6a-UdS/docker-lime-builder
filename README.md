@@ -1,7 +1,7 @@
 # docker-lime-builder
 A simple container for building LiME (https://github.com/504ensicsLabs/LiME) on CoreOS
 
-Usage:
+Example usage:
 
 ```bash
 git pull https://github.com/m6a-UdS/docker-lime-builder.git
