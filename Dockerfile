@@ -1,5 +1,5 @@
 FROM  ubuntu
-VOLUME        ["/lib/modules", "/lib/modules"]
+VOLUME        ["/lib/modules"]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
@@ -17,4 +17,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     
 RUN mkdir /lime
 RUN git clone https://github.com/504ensicsLabs/LiME.git /lime
-# RUN cd /lime/src && make

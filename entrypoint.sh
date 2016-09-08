@@ -1,0 +1,2 @@
+cd /lime/src 
+make
