@@ -1,3 +1,3 @@
 cd /lime/src 
 make
-cp lime-* /lime/lime.ko
+cp lime-* /host/lime.ko
