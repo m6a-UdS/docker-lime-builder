@@ -1,5 +1,6 @@
 FROM  ubuntu
-VOLUME        ["/lib/modules"]
+VOLUME ["/lib/modules"]
+ENTRYPOINT ["entrypoint.sh"]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
