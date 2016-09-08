@@ -4,8 +4,8 @@ A simple container for building the LiME kernel module (https://github.com/504en
 Example usage:
 
 ```bash
-git pull https://github.com/m6a-UdS/docker-lime-builder.git
-docker build -t lime .
-docker run -v /lib/modules:/lib/modules -v /home/core/docker-lime-builder/:/host lime bash /lime/make-lime.sh
-sudo insmod lime.ko "path=/home/core/memory.lime format=lime"
+$ git pull https://github.com/m6a-UdS/docker-lime-builder.git
+$ docker build -t lime .
+$ docker run -v /lib/modules:/lib/modules -v /home/core/docker-lime-builder/:/host lime $ bash /lime/make-lime.sh
+$ sudo insmod lime.ko "path=/home/core/memory.lime format=lime"
 ```
