@@ -1,6 +1,6 @@
 FROM  ubuntu:14.04
 VOLUME ["/lib/modules"]
-ENTRYPOINT ["lime/make-lime.sh"]
+CMD ["lime/make-lime.sh"]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
