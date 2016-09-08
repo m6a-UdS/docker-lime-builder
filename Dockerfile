@@ -1,18 +1,9 @@
 FROM  ubuntu:14.04
 CMD ["/lime/make-lime.sh"]
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y \
     git \
-    make \
-    automake \
-    gcc \
     build-essential \
-    g++ \
-    cpp \
-    libc6-dev \
-    man-db \
-    autoconf \
-    pkg-config \
     ca-certificates 
 RUN apt-get install -y realpath
     
