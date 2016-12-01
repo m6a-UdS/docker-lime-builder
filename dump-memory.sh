@@ -1,0 +1,1 @@
+insmod lime.ko "path=/home/core/memory.lime format=lime"

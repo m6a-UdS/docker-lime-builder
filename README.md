@@ -10,5 +10,5 @@ Example usage:
 ~/docker-lime-builder $ docker run -v /lib/modules:/lib/modules -v /home/core/docker-lime-builder/:/host lime bash /lime/make-lime.sh
 
 #in order to take a memory snapshot, execute:
-~/docker-lime-builder $ sudo insmod lime.ko "path=/home/core/memory.lime format=lime"
+~/docker-lime-builder $ sudo ./dump-memory.sh
 ```
