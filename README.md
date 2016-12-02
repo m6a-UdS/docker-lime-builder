@@ -12,4 +12,4 @@ Example usage:
 #in order to take a memory snapshot, execute:
 ~/docker-lime-builder $ sudo ./dump-memory.sh
 ```
-The output will result in a `memory.lime` file, which is a memory dump that you can analyse with 
+The output will result in a `memory.lime` file, which is a memory dump that you can analyse with Volatility
